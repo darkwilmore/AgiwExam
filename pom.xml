@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>agiw</groupId>
+  <artifactId>core</artifactId>
+  <version>0.1</version>
+  <repositories>
+     <repository>
+         <id>central</id>
+         <name>Maven Central Repo</name>
+         <url>http://repo1.maven.org/maven2</url>
+     </repository>
+     <repository>
+         <id>riptano</id>
+         <name>riptano</name>
+         <url>http://mvn.riptano.com/content/repositories/public</url>
+     </repository>
+     <repository>
+         <id>maven.scale7.org</id>
+         <name>Scale7 Maven Repo</name>
+         <url>https://github.com/s7/mvnrepo/raw/master</url>
+         <snapshots>
+             <enabled>true</enabled>
+         </snapshots>
+     </repository>
+   </repositories>
+  <!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
+	<dependencies>
+	<dependency>
+    	<groupId>org.jsoup</groupId>
+    	<artifactId>jsoup</artifactId>
+    	<version>1.10.3</version>
+	</dependency>
+	<dependency>
+ 	 <groupId>net.openhft</groupId>
+	  <artifactId>zero-allocation-hashing</artifactId>
+	  <version>0.8</version>
+	</dependency>
+	</dependencies>
+
+   <build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+  
+</project>
